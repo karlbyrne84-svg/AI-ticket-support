@@ -14,7 +14,3 @@ def predict_priority(query):
     priority_prediction = prior_vector.transform([query])
     return prior_model.predict(priority_prediction)[0]
 
-query = "every time i log into the website it crashes"
-
-print("category", predict_category(query))
-print("priority", predict_priority(query))
