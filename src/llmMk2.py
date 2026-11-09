@@ -28,7 +28,7 @@ def ticket_analysis_2(query):
 
 query = """my mouse wont work when i turn it on, i want a refund ASAP!!"""
 
-def tickey_summary(Q):
+def ticket_summary(Q):
     answer = ticket_analysis_2(Q)
     return answer + f"\n category:{predict_category(Q)}, priority:{predict_priority(Q)}"
 
